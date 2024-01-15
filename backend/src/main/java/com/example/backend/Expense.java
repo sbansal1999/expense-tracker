@@ -11,10 +11,10 @@ public class Expense {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
     private String title;
-    private String amount;
+    private Integer amount;
     private String description;
 
-    public Expense(String title, String amount, String description) {
+    public Expense(String title, Integer amount, String description) {
         this.title = title;
         this.amount = amount;
         this.description = description;
@@ -40,11 +40,11 @@ public class Expense {
         this.title = title;
     }
 
-    public String getAmount() {
+    public Integer getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(Integer amount) {
         this.amount = amount;
     }
 
