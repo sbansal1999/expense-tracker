@@ -24,6 +24,16 @@ public class Expense {
 
     }
 
+    @Override
+    public String toString() {
+        return "Expense{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", amount='" + amount + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }
